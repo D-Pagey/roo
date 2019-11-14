@@ -2,3 +2,4 @@
 
 - add commitizen
 - run git cz to commit easily per config
+- run storybook
