@@ -12,7 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false --verbose",
+    "test": "react-scripts test --watchAll=false --verbose --coverage --no-cache",
     "eject": "react-scripts eject",
     "lint": "eslint ./src/**/*.js",
     "lint:css": "stylelint './src/**/*.js'",
@@ -88,6 +88,13 @@
     "*.{json,yml,md,html}": [
       "prettier --write",
       "git add"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/index.js",
+      "src/**/*.js",
+      "!src/**/index.stories.js"
     ]
   }
 }

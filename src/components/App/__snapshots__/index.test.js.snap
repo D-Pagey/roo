@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component should render 1`] = `
-.c1 {
+.c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14,24 +18,34 @@ exports[`App component should render 1`] = `
   height: 48px;
 }
 
-.c0 {
-  border: 1px solid green;
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-<div
-  class="c0"
->
+<div>
   <div
-    class="c1"
+    class="c0"
   >
     <img
       alt="deliveroo logo"
+      data-testid="navbarSmallLogo"
       src="small-logo.svg"
     />
-    <img
-      alt="user icon"
-      src="user-icon.svg"
-    />
+    <div
+      class="c1"
+    >
+      <img
+        alt="user icon"
+        src="user-icon.svg"
+      />
+    </div>
   </div>
 </div>
 `;

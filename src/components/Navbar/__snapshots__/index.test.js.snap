@@ -2,6 +2,10 @@
 
 exports[`Navbar component should render 1`] = `
 .c0 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14,16 +18,32 @@ exports[`Navbar component should render 1`] = `
   height: 48px;
 }
 
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 <div
   class="c0"
 >
   <img
     alt="deliveroo logo"
+    data-testid="navbarSmallLogo"
     src="small-logo.svg"
   />
-  <img
-    alt="user icon"
-    src="user-icon.svg"
-  />
+  <div
+    class="c1"
+  >
+    <img
+      alt="user icon"
+      src="user-icon.svg"
+    />
+  </div>
 </div>
 `;
