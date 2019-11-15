@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RestaurantCard component should render 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 354px;
+}
+
+.c1 {
+  color: #828585;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+<div
+  class="c0"
+>
+  <img
+    alt="Burrito Kitchen"
+    src="https://f.roocdn.com/images/menus/25785/header-image.jpg?width=360&height=200&auto=webp&format=jpg&fit=crop&v=1477308353"
+  />
+  <h3>
+    Burrito Kitchen
+  </h3>
+  <ul
+    class="c1"
+  >
+    <li>
+      Mexican
+    </li>
+    <li>
+      Burritos
+    </li>
+    <li>
+      Halal
+    </li>
+    ££
+  </ul>
+</div>
+`;

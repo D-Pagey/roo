@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <S.Wrapper>
             {isLaptopOrLarger ? (
-                <img src={Logo} alt="deliveroo logo" data-testid="navbarSmallLogo" />
+                <img src={Logo} alt="deliveroo logo" data-testid="navbarLogo" />
             ) : (
                 <img src={SmallLogo} alt="deliveroo logo" data-testid="navbarSmallLogo" />
             )}
