@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar component should render 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 16px;
+  height: 48px;
+}
+
+<div
+  class="c0"
+>
+  <img
+    alt="deliveroo logo"
+    src="small-logo.svg"
+  />
+  <img
+    alt="user icon"
+    src="user-icon.svg"
+  />
+</div>
+`;
