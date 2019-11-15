@@ -1,11 +1,10 @@
 import React from 'react';
+import Navbar from '../Navbar';
 import * as S from './styles';
 
 const App = () => (
     <S.Wrapper>
-        <header>
-            <h1>Deliveroo Tech Test</h1>
-        </header>
+        <Navbar />
     </S.Wrapper>
 );
 

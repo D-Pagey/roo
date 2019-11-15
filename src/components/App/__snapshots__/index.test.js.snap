@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component should render 1`] = `
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 16px;
+  height: 48px;
+}
+
 .c0 {
   border: 1px solid green;
 }
@@ -8,10 +21,17 @@ exports[`App component should render 1`] = `
 <div
   class="c0"
 >
-  <header>
-    <h1>
-      Deliveroo Tech Test
-    </h1>
-  </header>
+  <div
+    class="c1"
+  >
+    <img
+      alt="deliveroo logo"
+      src="small-logo.svg"
+    />
+    <img
+      alt="user icon"
+      src="user-icon.svg"
+    />
+  </div>
 </div>
 `;
