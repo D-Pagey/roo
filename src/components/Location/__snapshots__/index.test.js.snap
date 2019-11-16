@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Location component should render 1`] = `
+.c3 {
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 0;
+  color: #00a396;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 11px 1rem;
+}
+
+.c0 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  background-color: #00ccbc;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 177px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+
+.c1 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin: 0 0 2px;
+  opacity: 50%;
+}
+
+.c2 {
+  color: #ffffff;
+  font-size: 2.125rem;
+  margin: 0 0 1.25rem;
+}
+
+<div
+  class="c0"
+>
+  <div>
+    <h4
+      class="c1"
+    >
+      Location
+    </h4>
+    <h5
+      class="c2"
+    >
+      Fitzrovia
+    </h5>
+  </div>
+  <button
+    class="c3"
+    type="button"
+  >
+    Change Location
+  </button>
+</div>
+`;
