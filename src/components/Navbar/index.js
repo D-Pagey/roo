@@ -7,11 +7,11 @@ import UserIcon from './assets/user-icon.svg';
 import * as S from './styles';
 
 const Navbar = () => {
-    const isLaptopOrLarger = useMediaQuery({ query: mediaQuery.laptop });
+    const isTabletOrLarger = useMediaQuery({ query: mediaQuery.tablet });
 
     return (
-        <S.Wrapper>
-            {isLaptopOrLarger ? (
+        <S.Wrapper isTabletOrLarger={isTabletOrLarger}>
+            {isTabletOrLarger ? (
                 <img src={Logo} alt="deliveroo logo" data-testid="navbarLogo" />
             ) : (
                 <img src={SmallLogo} alt="deliveroo logo" data-testid="navbarSmallLogo" />
@@ -19,7 +19,7 @@ const Navbar = () => {
 
             <S.UserWrapper>
                 <img src={UserIcon} alt="user icon" />
-                {isLaptopOrLarger && <S.UserName>Jane Smith</S.UserName>}
+                {isTabletOrLarger && <S.UserName>Jane Smith</S.UserName>}
             </S.UserWrapper>
         </S.Wrapper>
     );

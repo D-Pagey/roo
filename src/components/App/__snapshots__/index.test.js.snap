@@ -6,6 +6,7 @@ exports[`App component should render 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,8 +16,8 @@ exports[`App component should render 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 16px;
   max-width: 1126px;
+  padding: 0 1rem;
   width: 100%;
 }
 
