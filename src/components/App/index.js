@@ -1,21 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import data from '../../restaurants';
+import { useMediaQuery } from 'react-responsive';
+import { mediaQuery } from '../../tokens';
 import Navbar from '../Navbar';
 import Location from '../Location';
 import * as S from './styles';
 
+// mock data
+import data from '../../restaurants';
+
 const App = () => {
     const [neighborhood, setNeighborhood] = useState('');
+    const [restaurants, setRestaurants] = useState([]);
+    const isLaptopOrLarger = useMediaQuery({ query: mediaQuery.laptop });
+
+    console.log({ restaurants });
 
     useEffect(() => {
+        // this is unneccessary for mock data however this is where I would fetch real data
         setNeighborhood(data.neighborhood);
+        setRestaurants(data.restaurants);
     }, []);
 
     return (
         <div>
             <Navbar />
             <Location location={neighborhood} />
-            <S.Body>301 Locations</S.Body>
+            {isLaptopOrLarger && <S.Body>{restaurants.length} Restaurants</S.Body>}
         </div>
     );
 };
