@@ -10,9 +10,23 @@ exports[`RestaurantCard component should render 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   max-width: 354px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
 }
 
 .c1 {
+  margin: 0 0 0.5rem;
+}
+
+.c2 {
+  color: #2e3333;
+  font-size: 1.375rem;
+  font-weight: 500;
+  margin: 0 0 5px;
+}
+
+.c3 {
   color: #828585;
   display: -webkit-box;
   display: -webkit-flex;
@@ -23,29 +37,54 @@ exports[`RestaurantCard component should render 1`] = `
   padding: 0;
 }
 
-<div
+.c4 {
+  margin: 0 0.5rem;
+}
+
+<a
   class="c0"
+  href="https://deliveroo.co.uk/menu/london/bank/burrito-kitchen-cheapside"
+  rel="noopener noreferrer"
+  target="_blank"
 >
   <img
     alt="Burrito Kitchen"
+    class="c1"
     src="https://f.roocdn.com/images/menus/25785/header-image.jpg?width=360&height=200&auto=webp&format=jpg&fit=crop&v=1477308353"
   />
-  <h3>
+  <h5
+    class="c2"
+  >
     Burrito Kitchen
-  </h3>
+  </h5>
   <ul
-    class="c1"
+    class="c3"
   >
     <li>
       Mexican
     </li>
+    <span
+      class="c4"
+    >
+      ·
+    </span>
     <li>
       Burritos
     </li>
+    <span
+      class="c4"
+    >
+      ·
+    </span>
     <li>
       Halal
     </li>
+    <span
+      class="c4"
+    >
+      ·
+    </span>
     ££
   </ul>
-</div>
+</a>
 `;

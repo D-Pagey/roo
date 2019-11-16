@@ -15,6 +15,7 @@ const restaurant = {
 storiesOf('RestaurantCard', module).add('default', () => (
     <RestaurantCard
         imageURL={restaurant.image}
+        link={restaurant.url}
         name={restaurant.name}
         price={restaurant.price}
         tags={restaurant.tags}
