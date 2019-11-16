@@ -6,14 +6,14 @@ import Button from '../Button';
 import * as S from './styles';
 
 const Location = ({ location }) => {
-    const isLaptopOrLarger = useMediaQuery({ query: mediaQuery.laptop });
+    const isTabletOrLarger = useMediaQuery({ query: mediaQuery.tablet });
 
     return (
-        <S.Wrapper isMobile={!isLaptopOrLarger}>
-            <S.WidthWrapper isMobile={!isLaptopOrLarger}>
+        <S.Wrapper isMobile={!isTabletOrLarger}>
+            <S.WidthWrapper isMobile={!isTabletOrLarger}>
                 <div>
                     <S.Title>Location</S.Title>
-                    <S.WhiteTitle isMobile={!isLaptopOrLarger}>{location}</S.WhiteTitle>
+                    <S.WhiteTitle isMobile={!isTabletOrLarger}>{location}</S.WhiteTitle>
                 </div>
 
                 <Button>Change Location</Button>

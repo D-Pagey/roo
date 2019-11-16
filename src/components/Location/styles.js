@@ -21,6 +21,7 @@ export const WidthWrapper = styled.div`
 
 export const Title = styled.h4`
     font-size: 1rem;
+    font-weight: 500;
     line-height: 1.375rem;
     margin: 0 0 2px;
     opacity: 50%;
@@ -29,5 +30,6 @@ export const Title = styled.h4`
 export const WhiteTitle = styled.h5`
     color: #ffffff;
     font-size: 2.125rem;
+    font-weight: 500;
     margin: ${({ isMobile }) => (isMobile ? '0 0 1.25rem' : 0)};
 `;

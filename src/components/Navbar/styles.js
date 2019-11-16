@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     height: ${({ isTabletOrLarger }) => (isTabletOrLarger ? '60px' : '48px')};
     justify-content: space-between;
     max-width: 1126px;
-    padding: 0 1rem;
+    padding: ${({ isTabletOrLarger }) => (isTabletOrLarger ? '0' : '0 1rem')};
     width: 100%;
 `;
 
