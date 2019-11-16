@@ -4,7 +4,7 @@ import requireContext from 'require-context.macro';
 import * as S from '../src/components/App/styles';
 
 addDecorator((storyFn) => (
-    <div style={{ margin: '1rem' }}>
+    <div>
       <S.GlobalStyle />
       {storyFn()}
     </div>
