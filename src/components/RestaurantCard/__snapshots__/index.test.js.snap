@@ -16,7 +16,9 @@ exports[`RestaurantCard component should render 1`] = `
 }
 
 .c1 {
+  height: auto;
   margin: 0 0 0.5rem;
+  max-width: 100%;
 }
 
 .c2 {

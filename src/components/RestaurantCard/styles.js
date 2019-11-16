@@ -9,7 +9,9 @@ export const Link = styled.a`
 `;
 
 export const Image = styled.img`
+    height: auto;
     margin: 0 0 0.5rem;
+    max-width: 100%;
 `;
 
 export const Title = styled.h5`
