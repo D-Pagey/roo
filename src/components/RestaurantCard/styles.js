@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colours } from '../../tokens';
 
 export const Link = styled.a`
     display: flex;
@@ -15,14 +16,14 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h5`
-    color: #2e3333;
+    color: ${colours.darkGrey};
     font-size: 1.375rem;
     font-weight: 500;
     margin: 0 0 5px;
 `;
 
 export const List = styled.ul`
-    color: #828585;
+    color: ${colours.lightGrey};
     display: flex;
     list-style: none;
     margin: 0;

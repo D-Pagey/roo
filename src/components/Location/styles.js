@@ -1,7 +1,9 @@
 import styled from 'styled-components';
+import { PAGE_WIDTH } from '../../constants';
+import { colours } from '../../tokens';
 
 export const Wrapper = styled.div`
-    background-color: #00ccbc;
+    background-color: ${colours.lightTeal};
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -15,7 +17,7 @@ export const WidthWrapper = styled.div`
     display: flex;
     flex-direction: ${({ isMobile }) => (isMobile ? 'column' : 'row')};
     justify-content: space-between;
-    max-width: 1126px;
+    max-width: ${PAGE_WIDTH};
     width: 100%;
 `;
 
@@ -28,7 +30,7 @@ export const Title = styled.h4`
 `;
 
 export const WhiteTitle = styled.h5`
-    color: #ffffff;
+    color: ${colours.white};
     font-size: 2.125rem;
     font-weight: 500;
     margin: ${({ isMobile }) => (isMobile ? '0 0 1.25rem' : 0)};

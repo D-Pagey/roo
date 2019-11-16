@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
+import { PAGE_WIDTH } from '../../constants';
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize()};
@@ -29,6 +30,6 @@ export const Wrapper = styled.div`
 export const Body = styled.p`
     align-self: center;
     margin: 2.5rem 0;
-    max-width: 1126px;
+    max-width: ${PAGE_WIDTH};
     width: 100%;
 `;
