@@ -10,12 +10,14 @@ const Location = ({ location }) => {
 
     return (
         <S.Wrapper isMobile={!isLaptopOrLarger}>
-            <div>
-                <S.Title>Location</S.Title>
-                <S.WhiteTitle isMobile={!isLaptopOrLarger}>{location}</S.WhiteTitle>
-            </div>
+            <S.WidthWrapper isMobile={!isLaptopOrLarger}>
+                <div>
+                    <S.Title>Location</S.Title>
+                    <S.WhiteTitle isMobile={!isLaptopOrLarger}>{location}</S.WhiteTitle>
+                </div>
 
-            <Button>Change Location</Button>
+                <Button>Change Location</Button>
+            </S.WidthWrapper>
         </S.Wrapper>
     );
 };

@@ -22,11 +22,11 @@ const App = () => {
     }, []);
 
     return (
-        <div>
+        <S.Wrapper>
             <Navbar />
             <Location location={neighborhood} />
             {isLaptopOrLarger && <S.Body>{restaurants.length} Restaurants</S.Body>}
-        </div>
+        </S.Wrapper>
     );
 };
 

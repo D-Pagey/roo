@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Location component should render 1`] = `
-.c3 {
+.c4 {
   background-color: #ffffff;
   border-radius: 3px;
   border: 0;
@@ -12,12 +12,26 @@ exports[`Location component should render 1`] = `
 }
 
 .c0 {
+  background-color: #00ccbc;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 177px;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+
+.c1 {
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-  background-color: #00ccbc;
-  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,22 +39,22 @@ exports[`Location component should render 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 177px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1.5rem 1rem;
+  max-width: 1126px;
+  width: 100%;
 }
 
-.c1 {
+.c2 {
   font-size: 1rem;
   line-height: 1.375rem;
   margin: 0 0 2px;
   opacity: 50%;
 }
 
-.c2 {
+.c3 {
   color: #ffffff;
   font-size: 2.125rem;
   margin: 0 0 1.25rem;
@@ -49,23 +63,27 @@ exports[`Location component should render 1`] = `
 <div
   class="c0"
 >
-  <div>
-    <h4
-      class="c1"
-    >
-      Location
-    </h4>
-    <h5
-      class="c2"
-    >
-      Fitzrovia
-    </h5>
-  </div>
-  <button
-    class="c3"
-    type="button"
+  <div
+    class="c1"
   >
-    Change Location
-  </button>
+    <div>
+      <h4
+        class="c2"
+      >
+        Location
+      </h4>
+      <h5
+        class="c3"
+      >
+        Fitzrovia
+      </h5>
+    </div>
+    <button
+      class="c4"
+      type="button"
+    >
+      Change Location
+    </button>
+  </div>
 </div>
 `;

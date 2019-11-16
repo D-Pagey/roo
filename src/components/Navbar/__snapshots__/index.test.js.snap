@@ -10,12 +10,14 @@ exports[`Navbar component should render 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 48px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 16px;
-  height: 48px;
+  max-width: 1126px;
+  width: 100%;
 }
 
 .c1 {

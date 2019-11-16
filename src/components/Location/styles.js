@@ -1,14 +1,22 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    align-items: ${({ isMobile }) => (isMobile ? 'flex-start' : 'center')};
     background-color: #00ccbc;
     box-sizing: border-box;
     display: flex;
-    flex-direction: ${({ isMobile }) => (isMobile ? 'column' : 'row')};
+    justify-content: center;
     height: ${({ isMobile }) => (isMobile ? '177px' : '156px')};
-    justify-content: space-between;
     padding: 1.5rem 1rem;
+    width: 100%;
+`;
+
+export const WidthWrapper = styled.div`
+    align-items: ${({ isMobile }) => (isMobile ? 'flex-start' : 'center')};
+    display: flex;
+    flex-direction: ${({ isMobile }) => (isMobile ? 'column' : 'row')};
+    justify-content: space-between;
+    max-width: 1126px;
+    width: 100%;
 `;
 
 export const Title = styled.h4`
