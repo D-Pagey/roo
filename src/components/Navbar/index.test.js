@@ -8,14 +8,20 @@ jest.mock('react-responsive', () => ({
 }));
 
 describe('Navbar component', () => {
-    it('should render with small logo', () => {
-        const { container, getByTestId } = render(<Navbar />);
+    it('should render', () => {
+        const { container } = render(<Navbar />);
         expect(container.firstChild).toMatchSnapshot();
+    });
+
+    it('should render with small logo on mobile devices', () => {
+        useMediaQuery.mockImplementationOnce(() => false);
+
+        const { getByTestId } = render(<Navbar />);
         getByTestId('navbarSmallLogo');
     });
 
     it('should render with large logo of non-mobile devices', () => {
-        useMediaQuery.mockImplementation(() => true);
+        useMediaQuery.mockImplementationOnce(() => true);
 
         const { getByTestId } = render(<Navbar />);
         getByTestId('navbarLogo');
