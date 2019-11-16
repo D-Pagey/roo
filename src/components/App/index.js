@@ -23,8 +23,11 @@ const App = () => {
 
     return (
         <S.Wrapper>
+            <S.GlobalStyle />
+
             <Navbar />
             <Location location={neighborhood} />
+
             {isLaptopOrLarger && <S.Body>{restaurants.length} Restaurants</S.Body>}
         </S.Wrapper>
     );
