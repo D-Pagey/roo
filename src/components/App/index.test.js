@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { useMediaQuery } from 'react-responsive';
-import data from '../../restaurants';
 import App from '.';
 
 jest.mock('react-responsive', () => ({
@@ -17,7 +16,7 @@ describe('App component', () => {
     it('shows quantity of restaurants on non-mobile', () => {
         useMediaQuery.mockImplementation(() => true);
 
-        const { getByText } = render(<App />);
-        getByText(`${data.restaurants.length} Restaurants`);
+        const { getByTestId } = render(<App />);
+        getByTestId('appQuantity');
     });
 });

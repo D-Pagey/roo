@@ -1,24 +1,32 @@
 import styled from 'styled-components';
-import { PAGE_WIDTH } from '../../constants';
-import { colours } from '../../tokens';
+import { colours, mediaQuery, PAGE_WIDTH } from '../../tokens';
 
 export const Wrapper = styled.div`
     background-color: ${colours.lightTeal};
     box-sizing: border-box;
     display: flex;
+    height: 177px;
     justify-content: center;
-    height: ${({ isMobile }) => (isMobile ? '177px' : '156px')};
     padding: 1.5rem 1rem;
     width: 100%;
+
+    @media ${mediaQuery.tablet} {
+        height: 156px;
+    }
 `;
 
 export const WidthWrapper = styled.div`
-    align-items: ${({ isMobile }) => (isMobile ? 'flex-start' : 'center')};
+    align-items: flex-start;
     display: flex;
-    flex-direction: ${({ isMobile }) => (isMobile ? 'column' : 'row')};
+    flex-direction: column;
     justify-content: space-between;
     max-width: ${PAGE_WIDTH};
     width: 100%;
+
+    @media ${mediaQuery.tablet} {
+        align-items: center;
+        flex-direction: row;
+    }
 `;
 
 export const Title = styled.h4`
@@ -33,5 +41,9 @@ export const WhiteTitle = styled.h5`
     color: ${colours.white};
     font-size: 2.125rem;
     font-weight: 500;
-    margin: ${({ isMobile }) => (isMobile ? '0 0 1.25rem' : 0)};
+    margin: 0 0 1.25rem;
+
+    @media ${mediaQuery.tablet} {
+        margin: 0;
+    }
 `;

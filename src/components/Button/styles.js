@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { colours } from '../../tokens';
 
-export const Button = styled.button`
+export const Button = styled.button.attrs({
+    type: 'button'
+})`
     background-color: ${colours.white};
     border-radius: 3px;
     border: 0;

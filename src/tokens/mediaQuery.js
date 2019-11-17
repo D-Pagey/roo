@@ -7,3 +7,5 @@ export const mediaQuery = {
     monitor: '(min-width: 1500px)',
     monitorLarge: '(min-width: 2000px)'
 };
+
+export const PAGE_WIDTH = '1126px';

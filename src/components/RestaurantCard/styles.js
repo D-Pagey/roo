@@ -4,15 +4,23 @@ import { colours } from '../../tokens';
 export const Link = styled.a`
     display: flex;
     flex-direction: column;
-    max-width: 354px;
     text-decoration: none;
-    width: 100%;
+`;
+
+export const RatioWrapper = styled.div`
+    height: 0;
+    margin: 0 0 0.5rem;
+    overflow: hidden;
+    padding-top: calc(0.5625 * 100%);
+    position: relative;
 `;
 
 export const Image = styled.img`
-    height: auto;
-    margin: 0 0 0.5rem;
-    max-width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
 `;
 
 export const Title = styled.h5`
@@ -25,6 +33,8 @@ export const Title = styled.h5`
 export const List = styled.ul`
     color: ${colours.lightGrey};
     display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
     list-style: none;
     margin: 0;
     padding: 0;

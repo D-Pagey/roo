@@ -1,4 +1,4 @@
 import { colours } from './colours';
-import { mediaQuery } from './mediaQuery';
+import { mediaQuery, PAGE_WIDTH } from './mediaQuery';
 
-export { colours, mediaQuery };
+export { colours, mediaQuery, PAGE_WIDTH };

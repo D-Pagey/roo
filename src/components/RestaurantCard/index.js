@@ -4,7 +4,9 @@ import * as S from './styles';
 
 const RestaurantCard = ({ imageURL, link, name, price, tags }) => (
     <S.Link href={link} target="_blank" rel="noopener noreferrer">
-        <S.Image src={imageURL} alt={name} />
+        <S.RatioWrapper>
+            <S.Image src={imageURL} alt={name} />
+        </S.RatioWrapper>
 
         <S.Title>{name}</S.Title>
         <S.List>

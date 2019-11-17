@@ -1,13 +1,20 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import { normalize } from 'polished';
-import { PAGE_WIDTH } from '../../constants';
+import { PAGE_WIDTH } from '../../tokens';
 
 export const GlobalStyle = createGlobalStyle`
   ${normalize()};
   
-  body, button {  
-    @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,700&display=swap');
+  * {
+    box-sizing: border-box;
+  }
 
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body, button {  
     font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
@@ -31,5 +38,10 @@ export const Body = styled.p`
     align-self: center;
     margin: 2.5rem 0;
     max-width: ${PAGE_WIDTH};
+    padding: 0 1rem;
     width: 100%;
+
+    @media (min-width: ${PAGE_WIDTH}) {
+        padding: 0;
+    }
 `;

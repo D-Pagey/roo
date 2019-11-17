@@ -32,6 +32,18 @@ exports[`Navbar component should render 1`] = `
   display: flex;
 }
 
+@media (min-width:768px) {
+  .c0 {
+    height: 60px;
+  }
+}
+
+@media (min-width:1126px) {
+  .c0 {
+    padding: 0;
+  }
+}
+
 <div
   class="c0"
 >

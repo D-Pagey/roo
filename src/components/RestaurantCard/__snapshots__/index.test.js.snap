@@ -9,37 +9,49 @@ exports[`RestaurantCard component should render 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-width: 354px;
   -webkit-text-decoration: none;
   text-decoration: none;
-  width: 100%;
 }
 
 .c1 {
-  height: auto;
+  height: 0;
   margin: 0 0 0.5rem;
-  max-width: 100%;
+  overflow: hidden;
+  padding-top: calc(0.5625 * 100%);
+  position: relative;
 }
 
 .c2 {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.c3 {
   color: #2e3333;
   font-size: 1.375rem;
   font-weight: 500;
   margin: 0 0 5px;
 }
 
-.c3 {
+.c4 {
   color: #828585;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-size: 14px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.c4 {
+.c5 {
   margin: 0 0.5rem;
 }
 
@@ -49,24 +61,28 @@ exports[`RestaurantCard component should render 1`] = `
   rel="noopener noreferrer"
   target="_blank"
 >
-  <img
-    alt="Burrito Kitchen"
+  <div
     class="c1"
-    src="https://f.roocdn.com/images/menus/25785/header-image.jpg?width=360&height=200&auto=webp&format=jpg&fit=crop&v=1477308353"
-  />
+  >
+    <img
+      alt="Burrito Kitchen"
+      class="c2"
+      src="https://f.roocdn.com/images/menus/25785/header-image.jpg?width=360&height=200&auto=webp&format=jpg&fit=crop&v=1477308353"
+    />
+  </div>
   <h5
-    class="c2"
+    class="c3"
   >
     Burrito Kitchen
   </h5>
   <ul
-    class="c3"
+    class="c4"
   >
     <li>
       Mexican
     </li>
     <span
-      class="c4"
+      class="c5"
     >
       ·
     </span>
@@ -74,7 +90,7 @@ exports[`RestaurantCard component should render 1`] = `
       Burritos
     </li>
     <span
-      class="c4"
+      class="c5"
     >
       ·
     </span>
@@ -82,7 +98,7 @@ exports[`RestaurantCard component should render 1`] = `
       Halal
     </li>
     <span
-      class="c4"
+      class="c5"
     >
       ·
     </span>
