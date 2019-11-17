@@ -14,6 +14,8 @@ const App = () => {
     const [restaurants, setRestaurants] = useState([]);
     const isTabletOrLarger = useMediaQuery({ query: mediaQuery.tablet });
 
+    console.log({ isTabletOrLarger });
+
     useEffect(() => {
         // this is unneccessary for mock data however this is where I would fetch real data
         setNeighborhood(data.neighborhood);
