@@ -44,7 +44,7 @@ exports[`Navbar component should render 1`] = `
   }
 }
 
-<div
+<nav
   class="c0"
 >
   <img
@@ -60,5 +60,5 @@ exports[`Navbar component should render 1`] = `
       src="user-icon.svg"
     />
   </div>
-</div>
+</nav>
 `;

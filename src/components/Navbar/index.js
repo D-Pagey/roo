@@ -10,7 +10,7 @@ const Navbar = () => {
     const isTabletOrLarger = useMediaQuery({ query: mediaQuery.tablet });
 
     return (
-        <S.Wrapper>
+        <S.NavWrapper>
             {isTabletOrLarger ? (
                 <img src={Logo} alt="deliveroo logo" data-testid="navbarLogo" />
             ) : (
@@ -21,7 +21,7 @@ const Navbar = () => {
                 <img src={UserIcon} alt="user icon" />
                 {isTabletOrLarger && <S.UserName>Jane Smith</S.UserName>}
             </S.UserWrapper>
-        </S.Wrapper>
+        </S.NavWrapper>
     );
 };
 

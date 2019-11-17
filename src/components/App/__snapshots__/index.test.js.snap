@@ -222,7 +222,7 @@ exports[`App component should render 1`] = `
 <div
   class="c0"
 >
-  <div
+  <nav
     class="c1"
   >
     <img
@@ -238,7 +238,7 @@ exports[`App component should render 1`] = `
         src="user-icon.svg"
       />
     </div>
-  </div>
+  </nav>
   <div
     class="c3"
   >

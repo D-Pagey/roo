@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { mediaQuery, PAGE_WIDTH } from '../../tokens';
 
-export const Wrapper = styled.div`
+export const NavWrapper = styled.nav`
     align-items: center;
     box-sizing: border-box;
     display: flex;
